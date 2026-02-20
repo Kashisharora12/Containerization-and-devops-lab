@@ -1,10 +1,10 @@
 # Containerization and DevOps Lab
 
-Name: Mayank Thakur
+Name: Kashish Arora
 
-Roll no: R2142230924
+Roll no: R2142230009
 
-Sap-ID: 500123412
+Sap-ID: 500118973
 
 
 # Installation and Configuration of Windows Subsystem for Linux (WSL)
