@@ -66,6 +66,8 @@ docker run -d -p 8080:80 nginx
 ## Step 3: Verify Running Containers
 To check running containers, execute:
 docker ps
+<img width="1122" height="89" alt="image" src="https://github.com/user-attachments/assets/2658e304-cb88-4ca4-96d7-c02f3105750a" />
+
 
 
 ![](Dockerps.png)
