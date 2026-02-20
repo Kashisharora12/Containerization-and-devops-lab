@@ -89,6 +89,7 @@ docker rm <container_id>
 ![](Dockerdesktopcontainers.png)
 
 
+<img width="1124" height="444" alt="image" src="https://github.com/user-attachments/assets/a4934d80-8e04-470b-ac9b-78dc8348f3bc" />
 
 
 Step 5: Remove Docker Image To remove the downloaded image:
