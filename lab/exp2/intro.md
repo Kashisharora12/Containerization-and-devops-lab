@@ -93,6 +93,8 @@ docker rm <container_id>
 
 
 Step 5: Remove Docker Image To remove the downloaded image:
+<img width="838" height="228" alt="image" src="https://github.com/user-attachments/assets/eec802e5-e67b-4feb-b6ba-b8d0b2929e8b" />
+
 docker rmi nginx
 ![](dockerdesktop_image_removed.png)
 
