@@ -1,14 +1,8 @@
 # **Experiment 4: Docker Essentials**
 
-## Name: Mayank Thakur
-
-
-
-
-
-
-Roll no: R2142230924
-Sap-ID: 500123412
+## Name: Kashish Arora
+Roll no: R2142230009
+Sap-ID: 500118973
 School of Computer Science,
 
 University of Petroleum and Energy Studies, Dehradun
