@@ -262,6 +262,8 @@ docker images | grep flask-
 ## **Part 6: Publishing to Docker Hub**
 
 ### **Step 1: Prepare for Publishing**
+<img width="1248" height="248" alt="image" src="https://github.com/user-attachments/assets/7fd2540d-4a4c-491a-9dd3-e2f82f2cf5e5" />
+
 ```bash
 # Login to Docker Hub
 docker login
