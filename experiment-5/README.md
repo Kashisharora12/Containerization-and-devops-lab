@@ -300,7 +300,8 @@ docker stats --format json --no-stream
 docker stats --no-stream --no-trunc
 
 ```
-<img width="951" height="1017" alt="image" src="https://github.com/user-attachments/assets/51fbccec-a31c-4874-a6c9-be0feee74945" />
+<img width="1287" height="863" alt="image" src="https://github.com/user-attachments/assets/e93d77d5-80bf-4112-888b-8924e9abc11f" />
+
 
 ### Lab 2: docker top - Process Monitoring
 ``` Bash
