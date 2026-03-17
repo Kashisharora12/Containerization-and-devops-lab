@@ -144,7 +144,6 @@ docker volume rm volume-name
 docker cp local-file.txt container-name:/path/in/volume
 
 ```
-<img width="927" height="520" alt="image" src="https://github.com/user-attachments/assets/129bbe67-9066-4d0a-a814-a5759d25fac1" />
 
 
 
