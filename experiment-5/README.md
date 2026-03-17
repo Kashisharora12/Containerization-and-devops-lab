@@ -146,7 +146,7 @@ docker cp local-file.txt container-name:/path/in/volume
 ```
 <img width="927" height="520" alt="image" src="https://github.com/user-attachments/assets/129bbe67-9066-4d0a-a814-a5759d25fac1" />
 
-<img width="1916" height="492" alt="image" src="https://github.com/user-attachments/assets/fe1bfd10-1a6f-4d0d-92e6-c91a779cd5d0" />
+
 
 
 ## Part 2: Environment Variables
