@@ -19,6 +19,8 @@ docker start test-container
 docker exec test-container cat /data/message.txt
 # ERROR: File doesn't exist! Data was lost.
 Solution: Docker Volumes
+<img width="937" height="337" alt="image" src="https://github.com/user-attachments/assets/ccabf73b-865b-4a77-82db-89e391b6566a" />
+
 ```
 
 ![alt text](image.png)
@@ -47,8 +49,10 @@ docker volume ls
 
 # Inspect volume
 docker volume inspect mydata
+ <img width="887" height="451" alt="image" src="https://github.com/user-attachments/assets/2532cc02-3294-41a8-9110-cad28dc3af1c" />
+
 ```
-![alt text](image-2.png)
+
 3. Bind Mounts (Host Directory)
 ```Bash
 # Create directory on host
@@ -64,8 +68,8 @@ echo "From Host" > ~/myapp-data/host-file.txt
 docker exec web3 cat /app/data/host-file.txt
 # Shows: From Host
 ```
+<img width="887" height="451" alt="image" src="https://github.com/user-attachments/assets/3f1896e8-de3e-4ea6-80f5-0e5cb2602010" />
 
-![alt text](image-1.png)
 
 ### Lab 3: Practical Volume Examples
 Example 1: Database with Persistent Storage
@@ -116,7 +120,8 @@ docker run -d \
 # Test
 curl http://localhost:8080
 ```
-![alt text](image-3.png)
+<img width="933" height="817" alt="image" src="https://github.com/user-attachments/assets/d7ecdea2-4bdd-4c56-8374-78d06aee5d11" />
+
 
 Lab 4: Volume Management Commands
 ```Bash
@@ -139,8 +144,10 @@ docker volume rm volume-name
 docker cp local-file.txt container-name:/path/in/volume
 
 ```
-![alt text](image-4.png)
-![alt text](textfile.png)
+<img width="927" height="520" alt="image" src="https://github.com/user-attachments/assets/129bbe67-9066-4d0a-a814-a5759d25fac1" />
+
+<img width="1916" height="492" alt="image" src="https://github.com/user-attachments/assets/fe1bfd10-1a6f-4d0d-92e6-c91a779cd5d0" />
+
 
 ## Part 2: Environment Variables
 Lab 1: Setting Environment Variables
@@ -182,7 +189,8 @@ docker run -d \
   --env-file .env.secrets \
   my-app
 ```
-![alt text](image-7.png)
+<img width="950" height="1018" alt="image" src="https://github.com/user-attachments/assets/ce08373b-edea-4573-bfd2-9278c1a6f505" />
+
 ### Method 3: In Dockerfile
 ```Bash
 # Set default environment variables
@@ -217,7 +225,8 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=debug_mode)
 ```
-![alt text](image-5.png)
+<img width="766" height="603" alt="image" src="https://github.com/user-attachments/assets/2bfb912a-fd0c-4e81-b0fc-900690602316" />
+
 
 ### Dockerfile with Environment Variables
 ```Bash
@@ -240,7 +249,8 @@ ENV DEBUG=false
 EXPOSE 5000
 CMD ["python", "app.py"]
 ```
-![alt text](image-6.png)
+<img width="465" height="168" alt="image" src="https://github.com/user-attachments/assets/aced0d6c-a510-4c66-b8a1-b93fdba07254" />
+
 ### Lab 3: Test Environment Variables
 ```Bash
 # Run with custom env vars
@@ -260,7 +270,8 @@ docker exec flask-app printenv DATABASE_HOST
 # Test the endpoint
 curl http://localhost:5000/config
 ```
-![alt text](image-8.png)
+<img width="953" height="1000" alt="image" src="https://github.com/user-attachments/assets/6dc64b3d-410b-49f1-8e06-9cf55c133876" />
+
 ### Part 3: Docker Monitoring 
 ### Lab 1: Basic Monitoring Commands
 ### docker stats - Real-time Container Metrics
@@ -290,7 +301,8 @@ docker stats --format json --no-stream
 docker stats --no-stream --no-trunc
 
 ```
-![alt text](image-9.png)
+<img width="951" height="1017" alt="image" src="https://github.com/user-attachments/assets/51fbccec-a31c-4874-a6c9-be0feee74945" />
+
 ### Lab 2: docker top - Process Monitoring
 ``` Bash
 # View processes in container
@@ -323,7 +335,8 @@ docker logs --since 2024-01-15 container-name
 # Combine options
 docker logs -f --tail 50 -t container-name
 ```
-![alt text](image-10.png)
+<img width="932" height="876" alt="image" src="https://github.com/user-attachments/assets/1f1fb619-fb42-4ee4-ba34-ec52ca1c698a" />
+
 ### Lab 4: Container Inspection
 ```Bash
 # Detailed container info
@@ -409,7 +422,8 @@ docker run -d --name web2 --network my-network nginx
 # Containers can communicate using container names
 docker exec web1 curl http://web2
 ```
-![alt text](image-11.png)
+<img width="937" height="902" alt="image" src="https://github.com/user-attachments/assets/4763fa97-18ad-4ba6-992f-4fbd36a35a04" />
+
 ### 2. Host Network
 ```Bash
 # Container uses host's network directly
@@ -420,7 +434,8 @@ docker run -d --name host-app --network host nginx
 # Access directly on host port 80
 curl http://localhost
 ```
-![alt text](image-12.png)
+<img width="933" height="595" alt="image" src="https://github.com/user-attachments/assets/735cbec0-8294-49da-83bb-2180ed38a535" />
+
 
 ### 3. None Network
 ```Bash
@@ -431,13 +446,15 @@ docker run -d --name isolated-app --network none alpine sleep 3600
 docker exec isolated-app ifconfig
 
 ```
-![alt text](image-13.png)
+<img width="882" height="322" alt="image" src="https://github.com/user-attachments/assets/671c3e6a-2c14-4ee2-b722-ed9cc1a78c72" />
+
 ### 4. Overlay Network (Swarm)
 ```Bash
 # For Docker Swarm multi-host networking
 docker network create --driver overlay my-overlay
 ```
-![alt text](image-14.png)
+<img width="603" height="220" alt="image" src="https://github.com/user-attachments/assets/c78843ae-207f-4371-a00f-7d0fb1e2bfce" />
+
 ### Lab 3: Network Management Commands
 ```Bash
 # Create network
@@ -456,8 +473,10 @@ docker network rm network-name
 # Prune unused networks
 docker network prune
 ```
-![alt text](3.png)
-![alt text](image-15.png)
+<img width="618" height="45" alt="image" src="https://github.com/user-attachments/assets/4f587f95-c0c6-436c-be28-4fe255e26f89" />
+
+<img width="952" height="682" alt="image" src="https://github.com/user-attachments/assets/286b82da-9f1e-4f47-9536-76400c4912a4" />
+
 ### Lab 4: Multi-Container Application Example
 Web App + Database Communication
 
@@ -484,8 +503,10 @@ docker run -d \
 
 # Web app can connect to database using "postgres-db" hostname
 ```
-![alt text](3.png)
-![alt text](4.png)
+<img width="618" height="45" alt="image" src="https://github.com/user-attachments/assets/fecaf766-a38b-4464-aa26-80d92af6cecd" />
+
+<img width="932" height="397" alt="image" src="https://github.com/user-attachments/assets/67d2b206-e052-466d-907b-0d79c836f347" />
+
 
 
 ### Lab 5: Network Inspection & Debugging
@@ -506,7 +527,8 @@ docker exec container-name curl -I http://another-container
 # View network ports
 docker port container-name
 ```
-![alt text](image-17.png)
+<img width="1430" height="128" alt="image" src="https://github.com/user-attachments/assets/4aa23eb1-ef1e-42c5-a32d-688bb9623cfe" />
+
 
 ### Lab 6: Port Publishing vs Exposing
 ``` Bash
@@ -528,7 +550,8 @@ docker run -d -p 127.0.0.1:8080:80 --name app4 nginx
 # Dockerfile: EXPOSE 80
 # Still need -p to publish
 ```
-![alt text](image-18.png)
+<img width="1447" height="322" alt="image" src="https://github.com/user-attachments/assets/37fe81e2-37f5-402f-9aab-bb644c07c88e" />
+
 
 ### Part 5: Complete Real-World Example
 Application Architecture:
@@ -577,7 +600,8 @@ docker run -d \
   --env-file .env.production \
   flask-app:latest
 ```
-![alt text](image-20.png)
+<img width="1458" height="428" alt="image" src="https://github.com/user-attachments/assets/e81d81b2-7080-44a7-8848-7c2cd9ac8b7b" />
+
 ```bash
 Monitoring commands 
 # Check all components
@@ -596,6 +620,9 @@ docker exec flask-app ping -c 2 redis
 # View network details
 docker network inspect myapp-network
 ```
-![alt text](image-21.png)
-![alt text](image-19.png)
-![alt text](image-16.png)
+<img width="1341" height="235" alt="image" src="https://github.com/user-attachments/assets/6d29e90e-6923-49b6-a09e-d73166adfe83" />
+
+<img width="772" height="650" alt="image" src="https://github.com/user-attachments/assets/a7ba457a-b491-4d7b-856a-3489a11bb089" />
+
+<img width="1446" height="652" alt="image" src="https://github.com/user-attachments/assets/8664ab8f-f890-46e0-846b-0988dd1e2e55" />
+
