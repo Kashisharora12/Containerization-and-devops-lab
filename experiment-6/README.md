@@ -49,7 +49,9 @@ services:
 
    <img width="533" height="460" alt="image" src="https://github.com/user-attachments/assets/5ebb7447-5208-4a28-bd83-b05d0f330d8a" />
 
-   4. Advantages of Docker Compose
+
+    4. Advantages of Docker Compose
+
 1. Simplifies multi-container applications
 2. Provides reproducibility
 3. Version controllable configuration
