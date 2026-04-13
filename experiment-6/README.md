@@ -92,6 +92,13 @@ Access in browser: ```bash http://localhost:8081 ```
 
 <img width="1600" height="152" alt="image" src="https://github.com/user-attachments/assets/7195a486-5bdf-4e49-b653-ef4d4a6dc208" />
 
+Stop and remove container:
+
+```bash
+docker stop lab-nginx
+docker rm lab-nginx
+```
+
 
 
 
