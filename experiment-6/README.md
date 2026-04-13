@@ -375,6 +375,7 @@ Custom Dockerfile with Compose (Task 5)
 Multi-stage Dockerfile with Compose (Task 6)
 
 Viva Questions
+
 Q1. What is Docker Compose? Docker Compose is a tool used to define and run multi-container Docker applications using a YAML configuration file (docker-compose.yml).
 
 Q2. What is the difference between Docker Run and Docker Compose? Docker Run executes containers manually using CLI commands (imperative), while Docker Compose manages multiple containers using a declarative YAML configuration file.
