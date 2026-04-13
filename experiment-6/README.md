@@ -1,4 +1,4 @@
-Experiment 6 : Comparison of Docker Run and Docker Compose
+Experiment 6  : Comparison of Docker Run and Docker Compose
 
 Name: Kashish Arora
 
