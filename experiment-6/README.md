@@ -43,6 +43,8 @@ services:
     restart: unless-stopped
 ```
 
+<img width="874" height="602" alt="image" src="https://github.com/user-attachments/assets/b550340e-e5c3-452c-9c03-df89c48008a3" />
+
 
 
 
