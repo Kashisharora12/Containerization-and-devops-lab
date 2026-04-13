@@ -47,16 +47,7 @@ services:
 
 3. Mapping: Docker Run vs Docker Compose
 
-   Docker Run Flag	Docker Compose Equivalent
--p 8080:80	ports:
--v host:container	volumes:
--e KEY=value	environment:
---name	container_name:
---network	networks:
---restart	restart:
---memory	deploy.resources.limits.memory
---cpus	deploy.resources.limits.cpus
--d	docker compose up -d
+   <img width="533" height="460" alt="image" src="https://github.com/user-attachments/assets/5ebb7447-5208-4a28-bd83-b05d0f330d8a" />
 
 
 
