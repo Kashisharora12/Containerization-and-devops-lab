@@ -1,7 +1,11 @@
-Experiment 6: Comparison of Docker Run and Docker Compose
-Name: Mayank Thakur Roll No: R2142230924 Course: Containerization and DevOps Lab Experiment No: 6
+Experiment 6 : Comparison of Docker Run and Docker Compose
+
+Name: Kashish Arora
+
+Roll No: R2142230009  Course: Containerization and DevOps Lab Experiment No: 6
 
 Objective
+
 To understand the relationship between docker run and Docker Compose, and to compare their configuration syntax and use cases by deploying single-container and multi-container applications.
 
 PART A – Theory
