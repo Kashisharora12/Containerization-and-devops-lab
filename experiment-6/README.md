@@ -58,6 +58,22 @@ services:
 4. Unified lifecycle management
 5. Supports service scaling: docker compose up --scale web=3
 
+   PART B – Practical Implementation
+
+Task 1: Single Container Comparison
+
+Step 1: Run Nginx Using Docker Run
+
+Command:
+
+```bash
+docker run -d \
+  --name lab-nginx \
+  -p 8081:80 \
+  -v $(pwd)/html:/usr/share/nginx/html \
+  nginx:alpine
+```
+
 
 
 
