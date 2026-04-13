@@ -100,7 +100,25 @@ docker rm lab-nginx
 ```
 
 Step 2: Run Same Setup Using Docker Compose
+
 Create : ```bash docker-compose.yml: ```
+
+```bash
+version: '3.8'
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: lab-nginx
+    ports:
+      - "8081:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+```
+
+Run container:
+
+```bash docker compose up -d ```
+
 
 
 
