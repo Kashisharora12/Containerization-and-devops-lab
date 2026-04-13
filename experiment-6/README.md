@@ -86,6 +86,13 @@ docker ps
 
 Access in browser: ```bash http://localhost:8081 ```
 
+📸 Screenshot – Browser output (Docker Run):
+
+![Browser output - Docker Run localhost:8081]
+
+<img width="1600" height="152" alt="image" src="https://github.com/user-attachments/assets/7195a486-5bdf-4e49-b653-ef4d4a6dc208" />
+
+
 
 
 
