@@ -82,6 +82,9 @@ Verify container is running:
 docker ps
 ```
 
+<img width="2020" height="150" alt="image" src="https://github.com/user-attachments/assets/2ec0d241-e572-4bc1-9e14-a98e77895f04" />
+
+
 
 
 
