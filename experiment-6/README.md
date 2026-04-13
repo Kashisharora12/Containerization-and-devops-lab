@@ -19,6 +19,7 @@ docker run -d \
   -v ./html:/usr/share/nginx/html \
   -e NGINX_HOST=localhost \
   nginx:alpine
+```
 
 <img width="1217" height="180" alt="image" src="https://github.com/user-attachments/assets/98d9867f-eb36-450b-8c9f-11f810d2b8ed" />
 
