@@ -23,3 +23,26 @@ docker run -d \
 
 <img width="1217" height="180" alt="image" src="https://github.com/user-attachments/assets/98d9867f-eb36-450b-8c9f-11f810d2b8ed" />
 
+2. Docker Compose (Declarative Approach)
+Docker Compose uses a YAML file (docker-compose.yml) to define services, networks, and volumes in a structured format. Instead of multiple commands, a single command is used: docker compose up -d
+
+Equivalent Compose file:
+
+```bash
+version: '3.8'
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: my-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+    environment:
+      NGINX_HOST: localhost
+    restart: unless-stopped
+```
+
+
+
+
