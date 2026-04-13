@@ -99,6 +99,9 @@ docker stop lab-nginx
 docker rm lab-nginx
 ```
 
+Step 2: Run Same Setup Using Docker Compose
+Create : ```bash docker-compose.yml: ```
+
 
 
 
