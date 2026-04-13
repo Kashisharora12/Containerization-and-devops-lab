@@ -50,11 +50,11 @@ services:
    <img width="533" height="460" alt="image" src="https://github.com/user-attachments/assets/5ebb7447-5208-4a28-bd83-b05d0f330d8a" />
 
    4. Advantages of Docker Compose
-Simplifies multi-container applications
-Provides reproducibility
-Version controllable configuration
-Unified lifecycle management
-Supports service scaling: docker compose up --scale web=3
+1. Simplifies multi-container applications
+2. Provides reproducibility
+3. Version controllable configuration
+4. Unified lifecycle management
+5. Supports service scaling: docker compose up --scale web=3
 
 
 
