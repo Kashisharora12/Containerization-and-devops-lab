@@ -45,6 +45,19 @@ services:
 
 <img width="874" height="602" alt="image" src="https://github.com/user-attachments/assets/b550340e-e5c3-452c-9c03-df89c48008a3" />
 
+3. Mapping: Docker Run vs Docker Compose
+
+   Docker Run Flag	Docker Compose Equivalent
+-p 8080:80	ports:
+-v host:container	volumes:
+-e KEY=value	environment:
+--name	container_name:
+--network	networks:
+--restart	restart:
+--memory	deploy.resources.limits.memory
+--cpus	deploy.resources.limits.cpus
+-d	docker compose up -d
+
 
 
 
