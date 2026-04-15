@@ -1,6 +1,6 @@
 Experiment 6: Comparison of Docker Run and Docker Compose
 
-Name: Kashish Arora  Roll No: R2142230009  Course: Containerization and DevOps  Lab Experiment No: 6
+Name: Kashish Arora  Roll No: R2142230009  Course: Containerization and DevOps Lab  Experiment No: 6
 
 Objective
 
