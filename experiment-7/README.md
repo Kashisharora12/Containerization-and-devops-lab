@@ -265,7 +265,7 @@ Image is securely pushed to Docker Hub using stored credentials
 
 13. Screenshots
 
-Screenshot 1 — Jenkins Plugin Installation (Getting Started)
+Screenshot  — Jenkins Plugin Installation (Getting Started)
 
 ![Jenkins Getting Started - Plugin Setup]
 
@@ -274,7 +274,7 @@ Screenshot 1 — Jenkins Plugin Installation (Getting Started)
 Jenkins loading suggested plugins during the initial setup wizard at localhost:8080.
 
 
-Screenshot 2 — LocalTunnel Setup in Terminal
+Screenshot  — LocalTunnel Setup in Terminal
 
 ![LocalTunnel Terminal Setup]!
 
@@ -282,7 +282,7 @@ Screenshot 2 — LocalTunnel Setup in Terminal
 
 Terminal showing npm install -g localtunnel, docker ps confirming Jenkins container is running, and npx localtunnel --port 8080 generating the public tunnel URL.
 
-Screenshot 3 — LocalTunnel Connection Error (Firewall)
+Screenshot  — LocalTunnel Connection Error (Firewall)
 
 ![LocalTunnel Connection Error]
 
