@@ -12,6 +12,7 @@
 4. [Experiment 4 – Docker Essentials](lab/exp4/experiment-4-docker-essentials.md)
 5.   [Experiment 5 – Docker Compose](experiment-5/README.md)
 6.  [Experiment 6 – Docker Run vs Docker Compose](experiment-6/README.md)
+7.  [Experiment 7 – CI/CD Pipeline using Jenkins, GitHub and Docker Hub](experiment-7/README.md)
 
 
 
