@@ -269,6 +269,28 @@ Screenshot 1 — Jenkins Plugin Installation (Getting Started)
 
 ![Jenkins Getting Started - Plugin Setup]
 
+<img width="1196" height="662" alt="image" src="https://github.com/user-attachments/assets/3aa368dc-c540-49cc-9718-6263d3de2c75" />
+
+Jenkins loading suggested plugins during the initial setup wizard at localhost:8080.
+
+
+Screenshot 2 — LocalTunnel Setup in Terminal
+
+![LocalTunnel Terminal Setup]!
+
+<img width="1190" height="721" alt="image" src="https://github.com/user-attachments/assets/c720f176-ac48-4ad3-bd84-570e233c5c0a" />
+
+Terminal showing npm install -g localtunnel, docker ps confirming Jenkins container is running, and npx localtunnel --port 8080 generating the public tunnel URL.
+
+Screenshot 3 — LocalTunnel Connection Error (Firewall)
+
+![LocalTunnel Connection Error]
+
+
+
+
+
+
 
 
    
