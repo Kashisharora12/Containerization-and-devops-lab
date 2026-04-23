@@ -273,13 +273,6 @@ Screenshot  — Jenkins Plugin Installation (Getting Started)
 
 Jenkins loading suggested plugins during the initial setup wizard at localhost:8080.
 
-
-Screenshot  — LocalTunnel Setup in Terminal
-
-![LocalTunnel Terminal Setup]!
-
-<img width="1190" height="721" alt="image" src="https://github.com/user-attachments/assets/c720f176-ac48-4ad3-bd84-570e233c5c0a" />
-
 Terminal showing npm install -g localtunnel, docker ps confirming Jenkins container is running, and npx localtunnel --port 8080 generating the public tunnel URL.
 
 14. Viva Questions
