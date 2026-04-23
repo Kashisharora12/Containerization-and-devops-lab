@@ -133,7 +133,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 
 Build the image:
 
-```bash docker build -t ubuntu-server . ```
+```bash docker build -t ubuntu-server ```
 
 <img width="1200" height="767" alt="image" src="https://github.com/user-attachments/assets/1051aa48-543e-4fb6-acad-08f102044647" />
 
@@ -255,7 +255,7 @@ Step 7: Create and Run Playbook (update.yml)
 
 Run the playbook:
 
-```bash ansible-playbook -i inventory.ini update.yml ```
+```bash ansible-playbook -i inventory.ini update.ym ```
 
 Expected output:
 
@@ -287,6 +287,7 @@ PLAY RECAP *********************************************************************
 172.17.0.4  : ok=4  changed=3  unreachable=0  failed=0
 172.17.0.5  : ok=4  changed=3  unreachable=0  failed=0
 ```
+
 
 <img width="1186" height="378" alt="image" src="https://github.com/user-attachments/assets/5d2725b0-3e47-47d8-a4ee-08915bec60c9" />
 
@@ -350,6 +351,7 @@ for i in {1..4}; do
     docker exec server${i} cat /root/ansible_test.txt
 done
 ```
+
 
 <img width="1165" height="447" alt="image" src="https://github.com/user-attachments/assets/dc6ccb9c-5c1d-4161-8c7f-2d9fe2c4b116" />
 
