@@ -240,10 +240,15 @@ A custom Permanent Agent node (Kashish node macos) was also configured in Jenkin
 11. Observations
 
 Jenkins GUI significantly simplifies CI/CD pipeline management
+
 GitHub acts as both source repository and pipeline definition store (via Jenkinsfile)
+
 Docker ensures consistent, reproducible builds across environments
+
 Webhook integration enables fully automated, event-driven pipelines
+
 localtunnel provides a quick way to expose local Jenkins to the internet for webhook testing
+
 The Docker socket mount allows Jenkins to control the host Docker engine directly
 
 12. Result
@@ -251,8 +256,11 @@ The Docker socket mount allows Jenkins to control the host Docker engine directl
 Successfully implemented a complete CI/CD pipeline where:
 
 Source code and pipeline definition are maintained in GitHub
+
 Jenkins automatically detects code changes via GitHub webhook
+
 Docker image is built on the host agent
+
 Image is securely pushed to Docker Hub using stored credentials
 
 13. Screenshots
