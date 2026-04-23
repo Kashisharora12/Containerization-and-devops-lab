@@ -282,10 +282,31 @@ Screenshot  — LocalTunnel Setup in Terminal
 
 Terminal showing npm install -g localtunnel, docker ps confirming Jenkins container is running, and npx localtunnel --port 8080 generating the public tunnel URL.
 
-Screenshot  — LocalTunnel Connection Error (Firewall)
+14. Viva Questions
 
-![LocalTunnel Connection Error]
+Q1. What is the role of Jenkinsfile? It defines the CI/CD pipeline as code, stored in the repository alongside the application source.
 
+Q2. How does Jenkins integrate with GitHub? Through GitHub Webhooks — GitHub sends a POST request to Jenkins on every push event, triggering the pipeline automatically.
+
+Q3. Why is Docker used in CI/CD? Docker ensures consistent, reproducible builds across different environments by packaging the application and its dependencies into an image.
+
+Q4. What is a webhook? A webhook is an HTTP callback that allows GitHub to notify Jenkins of events (like a push) in real time.
+
+Q5. Why store Docker Hub token in Jenkins credentials? To avoid hardcoding secrets in the Jenkinsfile, which is stored in a public/shared repository. Jenkins credentials store is encrypted and secure.
+
+Q6. What is the benefit of using the same host as agent? Jenkins can directly invoke Docker commands on the host, eliminating the need for a separate build agent and simplifying the setup.
+
+15. Key Takeaways
+
+Jenkins is GUI-based but pipelines are fully code-driven via Jenkinsfile
+
+Always use the credentials store — never hardcode secrets
+
+Webhooks make CI/CD fully automatic and event-driven
+
+Docker socket mounting (/var/run/docker.sock) allows Jenkins to act as its own Docker agent
+
+localtunnel is a quick solution for exposing local services during development/testing
 
 
 
