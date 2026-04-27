@@ -16,6 +16,7 @@
 8.  [Experiment 09 - Ansible](experiment-9/README.md)
 9.  [Experiment 10 - SonarQube — Static Code Analysis](experiment-10/README.md)
 10. [Experiment 11 -Orchestration using Docker Compose & Docker Swarm](experiment-11/README.md)
+11. [Experiment 12 -Container Orchestration using Kubernetes](experiment-12/README.md)
 
 
 
