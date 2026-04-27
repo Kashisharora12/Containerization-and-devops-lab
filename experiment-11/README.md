@@ -30,4 +30,73 @@ In Swarm, we deploy a stack using the same Compose file. Swarm reads the file an
 
 ```bash docker stack deploy -c docker-compose.yml wpstack ```
 
+Task 4: Verify the Deployment
+
+List all services in the stack:
+
+```bash docker service ls ```
+
+See detailed tasks (containers) for a specific service:
+
+```bash docker service ps wpstack_wordpress ```
+
+See all running containers (notice they are managed by Swarm):
+
+```bash docker ps ```
+
+<img width="1243" height="120" alt="image" src="https://github.com/user-attachments/assets/190defea-75f7-4ae0-85eb-8d4bf78796ff" />
+
+Task 5: Access WordPress
+
+Open your browser and navigate to: ```bash http://localhost:8081 ```
+
+You should see the WordPress setup screen.
+
+Task 6: Scale the Application (Swarm's Superpower)
+
+Scale WordPress from 1 to 3 replicas using Swarm's orchestration.
+
+```bash docker service scale wpstack_wordpress=3 ```
+
+<img width="1097" height="146" alt="image" src="https://github.com/user-attachments/assets/76a62cde-39b7-484e-bc64-761a2280e48a" />
+
+Verify the scaling:
+
+```bash
+docker service ls
+docker service ps wpstack_wordpress
+docker ps | grep wordpress
+```
+
+Note: Swarm automatically balances traffic among all 3 containers on port 8081 without port conflicts.
+
+Task 7: Test Self-Healing (Automatic Recovery)
+
+Swarm automatically replaces failed containers. Let's test it:
+
+Step 1: Find a WordPress container ID.
+
+```bash docker ps | grep wordpress ```
+
+Step 2: Kill it to simulate a crash (replace <container-id>):
+
+```bash docker kill <container-id> ```
+
+Step 3: Watch Swarm recreate it automatically:
+
+```bash
+docker service ps wpstack_wordpress
+docker ps | grep wordpress
+```
+
+<img width="1232" height="156" alt="image" src="https://github.com/user-attachments/assets/a1e5ffe4-5b64-4d43-a455-64256da2fc40" />
+
+Notice the killed container is shut down, and a new container is automatically created to maintain 3 replicas.
+
+
+
+
+
+
+
 
